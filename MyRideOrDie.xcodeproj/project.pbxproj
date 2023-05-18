@@ -7,19 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD0434962A16A16A00ADA140 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0434952A16A16A00ADA140 /* Contact.swift */; };
+		AD3EF8472A16B03800852217 /* ContactsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3EF8462A16B03800852217 /* ContactsProvider.swift */; };
+		AD3EF8492A16B47C00852217 /* ContactRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3EF8482A16B47C00852217 /* ContactRowView.swift */; };
+		AD3EF84C2A16B50400852217 /* ContactDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3EF84B2A16B50400852217 /* ContactDetailView.swift */; };
+		AD3EF84E2A16BB1300852217 /* CreateContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3EF84D2A16BB1300852217 /* CreateContentView.swift */; };
 		ADA10D7D2A153F0000A45185 /* MyRideOrDieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA10D7C2A153F0000A45185 /* MyRideOrDieApp.swift */; };
 		ADA10D7F2A153F0000A45185 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA10D7E2A153F0000A45185 /* ContentView.swift */; };
 		ADA10D812A153F0100A45185 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADA10D802A153F0100A45185 /* Assets.xcassets */; };
 		ADA10D852A153F0100A45185 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADA10D842A153F0100A45185 /* Preview Assets.xcassets */; };
+		ADA10D8D2A153F8C00A45185 /* ContactsDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ADA10D8B2A153F8C00A45185 /* ContactsDataModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD0434952A16A16A00ADA140 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		AD3EF8462A16B03800852217 /* ContactsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsProvider.swift; sourceTree = "<group>"; };
+		AD3EF8482A16B47C00852217 /* ContactRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRowView.swift; sourceTree = "<group>"; };
+		AD3EF84B2A16B50400852217 /* ContactDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailView.swift; sourceTree = "<group>"; };
+		AD3EF84D2A16BB1300852217 /* CreateContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateContentView.swift; sourceTree = "<group>"; };
 		ADA10D792A153F0000A45185 /* MyRideOrDie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyRideOrDie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADA10D7C2A153F0000A45185 /* MyRideOrDieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRideOrDieApp.swift; sourceTree = "<group>"; };
 		ADA10D7E2A153F0000A45185 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ADA10D802A153F0100A45185 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADA10D822A153F0100A45185 /* MyRideOrDie.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyRideOrDie.entitlements; sourceTree = "<group>"; };
 		ADA10D842A153F0100A45185 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ADA10D8C2A153F8C00A45185 /* ContactsDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ContactsDataModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +45,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD0434972A16A18900ADA140 /* MModel */ = {
+			isa = PBXGroup;
+			children = (
+				AD0434952A16A16A00ADA140 /* Contact.swift */,
+			);
+			path = MModel;
+			sourceTree = "<group>";
+		};
+		AD3EF8452A16B02B00852217 /* PProvider */ = {
+			isa = PBXGroup;
+			children = (
+				AD3EF8462A16B03800852217 /* ContactsProvider.swift */,
+			);
+			path = PProvider;
+			sourceTree = "<group>";
+		};
+		AD3EF84A2A16B4DD00852217 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AD3EF8482A16B47C00852217 /* ContactRowView.swift */,
+				ADA10D7E2A153F0000A45185 /* ContentView.swift */,
+				AD3EF84B2A16B50400852217 /* ContactDetailView.swift */,
+				AD3EF84D2A16BB1300852217 /* CreateContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		ADA10D702A153F0000A45185 = {
 			isa = PBXGroup;
 			children = (
@@ -52,8 +91,11 @@
 		ADA10D7B2A153F0000A45185 /* MyRideOrDie */ = {
 			isa = PBXGroup;
 			children = (
+				AD3EF84A2A16B4DD00852217 /* Views */,
+				AD3EF8452A16B02B00852217 /* PProvider */,
+				AD0434972A16A18900ADA140 /* MModel */,
+				ADA10D8B2A153F8C00A45185 /* ContactsDataModel.xcdatamodeld */,
 				ADA10D7C2A153F0000A45185 /* MyRideOrDieApp.swift */,
-				ADA10D7E2A153F0000A45185 /* ContentView.swift */,
 				ADA10D802A153F0100A45185 /* Assets.xcassets */,
 				ADA10D822A153F0100A45185 /* MyRideOrDie.entitlements */,
 				ADA10D832A153F0100A45185 /* Preview Content */,
@@ -139,7 +181,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD0434962A16A16A00ADA140 /* Contact.swift in Sources */,
+				AD3EF8472A16B03800852217 /* ContactsProvider.swift in Sources */,
+				AD3EF84C2A16B50400852217 /* ContactDetailView.swift in Sources */,
+				ADA10D8D2A153F8C00A45185 /* ContactsDataModel.xcdatamodeld in Sources */,
+				AD3EF84E2A16BB1300852217 /* CreateContentView.swift in Sources */,
 				ADA10D7F2A153F0000A45185 /* ContentView.swift in Sources */,
+				AD3EF8492A16B47C00852217 /* ContactRowView.swift in Sources */,
 				ADA10D7D2A153F0000A45185 /* MyRideOrDieApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,6 +402,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ADA10D8B2A153F8C00A45185 /* ContactsDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ADA10D8C2A153F8C00A45185 /* ContactsDataModel.xcdatamodel */,
+			);
+			currentVersion = ADA10D8C2A153F8C00A45185 /* ContactsDataModel.xcdatamodel */;
+			path = ContactsDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = ADA10D712A153F0000A45185 /* Project object */;
 }
