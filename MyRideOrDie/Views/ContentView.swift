@@ -23,7 +23,7 @@ struct ContentView: View {
                 ForEach(contacts) { contact in
                     
                     ZStack(alignment: .leading) {
-                        NavigationLink(destination: ContactDetailView()) {
+                        NavigationLink(destination: ContactDetailView(contact: contact)) {
                             EmptyView()
                         }
                         .opacity(0)
@@ -54,6 +54,10 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        let preview = ContactsProvider.shared
+        ContentView(provider: preview)
+            .environment(\.managedObjectContext, preview.viewContext)
+            .previewDisplayName("Contacts with Data")
+            .onAppear { Contact.makePreview(count: 10, in: preview.viewContext) }
     }
 }
