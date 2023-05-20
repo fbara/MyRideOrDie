@@ -13,6 +13,7 @@
 		AD3EF84C2A16B50400852217 /* ContactDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3EF84B2A16B50400852217 /* ContactDetailView.swift */; };
 		AD3EF84E2A16BB1300852217 /* CreateContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3EF84D2A16BB1300852217 /* CreateContentView.swift */; };
 		AD3EF8512A16BEA600852217 /* EditContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3EF8502A16BEA600852217 /* EditContactViewModel.swift */; };
+		AD3EF8532A192D6000852217 /* NoContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3EF8522A192D6000852217 /* NoContactsView.swift */; };
 		ADA10D7D2A153F0000A45185 /* MyRideOrDieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA10D7C2A153F0000A45185 /* MyRideOrDieApp.swift */; };
 		ADA10D7F2A153F0000A45185 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA10D7E2A153F0000A45185 /* ContentView.swift */; };
 		ADA10D812A153F0100A45185 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADA10D802A153F0100A45185 /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 		AD3EF84B2A16B50400852217 /* ContactDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailView.swift; sourceTree = "<group>"; };
 		AD3EF84D2A16BB1300852217 /* CreateContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateContentView.swift; sourceTree = "<group>"; };
 		AD3EF8502A16BEA600852217 /* EditContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditContactViewModel.swift; sourceTree = "<group>"; };
+		AD3EF8522A192D6000852217 /* NoContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoContactsView.swift; sourceTree = "<group>"; };
 		ADA10D792A153F0000A45185 /* MyRideOrDie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyRideOrDie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADA10D7C2A153F0000A45185 /* MyRideOrDieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRideOrDieApp.swift; sourceTree = "<group>"; };
 		ADA10D7E2A153F0000A45185 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				AD3EF8482A16B47C00852217 /* ContactRowView.swift */,
 				ADA10D7E2A153F0000A45185 /* ContentView.swift */,
 				AD3EF84B2A16B50400852217 /* ContactDetailView.swift */,
+				AD3EF8522A192D6000852217 /* NoContactsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				AD3EF84E2A16BB1300852217 /* CreateContentView.swift in Sources */,
 				ADA10D7F2A153F0000A45185 /* ContentView.swift in Sources */,
 				AD3EF8492A16B47C00852217 /* ContactRowView.swift in Sources */,
+				AD3EF8532A192D6000852217 /* NoContactsView.swift in Sources */,
 				ADA10D7D2A153F0000A45185 /* MyRideOrDieApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
