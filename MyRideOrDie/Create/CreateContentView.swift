@@ -9,6 +9,8 @@ import SwiftUI
 
 struct CreateContentView: View {
     @Environment(\.dismiss) private var dismiss
+    @ObservedObject var vm: EditContactViewModel
+    
     
     var body: some View {
         
@@ -16,24 +18,24 @@ struct CreateContentView: View {
             
             Section("General") {
                 
-                TextField("Name", text: .constant(""))
+                TextField("Name", text: $vm.contact.name)
                     .keyboardType(.namePhonePad)
                 
-                TextField("Email", text: .constant(""))
+                TextField("Email", text: $vm.contact.email)
                     .keyboardType(.emailAddress)
                 
-                TextField("Phone Number", text: .constant(""))
+                TextField("Phone Number", text: $vm.contact.phoneNumber)
                     .keyboardType(.phonePad)
                 
-                DatePicker("Birthday", selection: .constant(.now), displayedComponents: [.date])
+                DatePicker("Birthday", selection: $vm.contact.dob, displayedComponents: [.date])
                     .datePickerStyle(.compact)
                 
-                Toggle("Favorite", isOn: .constant(true))
+                Toggle("Favorite", isOn: $vm.contact.isFavorite)
                 
             }
             
             Section("Notes") {
-                TextField("", text: .constant("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."),
+                TextField("", text: $vm.contact.notes,
                           axis: .vertical)
             }
         }
@@ -41,7 +43,13 @@ struct CreateContentView: View {
         .toolbar {
             ToolbarItem(placement: .confirmationAction) {
                 Button("Done") {
-                    dismiss()
+                    do {
+                        try vm.save()
+                        dismiss()
+                    } catch {
+                        print(error)
+                    }
+                    
                 }
             }
             
@@ -57,7 +65,7 @@ struct CreateContentView: View {
 struct CreateContentView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
-            CreateContentView()
+            CreateContentView(vm: .init(provider: .shared))
         }
     }
 }
